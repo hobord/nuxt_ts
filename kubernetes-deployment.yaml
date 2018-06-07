@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nuxtjs-deployment
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nuxtjs-app
+  template:
+    metadata:
+      labels:
+        app: nuxtjs
+    spec:
+      containers:
+      - image: nuxtjs-app:latest
+        name: nuxtjs-app
+        env:
+          - name: HOST
+            value: "0.0.0.0"
+          - name: PORT
+            value: "3000"
+          - name: NODE_ENV
+            value: "production"
+        ports:
+        - containerPort: 3000
+          protocol: TCP
+  

@@ -17,6 +17,15 @@ $ npm start
 
 # generate static project
 $ npm run generate
+
+# Docker build
+docker build -t nuxtjs-app .
+
+# Docker run
+docker run nuxtjs-app
+
+# Kubernetes
+kubectl create -f kubernetes-deployment.yaml
 ```
 
 For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
