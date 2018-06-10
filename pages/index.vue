@@ -2,6 +2,7 @@
   <section>
     <h1 class="header">Nuxt TypeScript Starter</h1>
     <div>Hello Hello</div>
+    <HelloWorld/>
     <div class="cards">
       <Card v-for="person in people" :key="person.id" :person="person"></Card>
     </div>
@@ -15,10 +16,12 @@ import {
 } from "nuxt-property-decorator"
 import { State } from "vuex-class"
 import Card from "~/components/Card.vue"
+import HelloWorld from "~/components/HelloWorld/HelloWorld.vue"
 
 @Component({
   components: {
-    Card
+    Card,
+    HelloWorld
   }
 })
 export default class extends Vue {

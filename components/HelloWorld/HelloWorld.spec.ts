@@ -1,11 +1,10 @@
 import { shallowMount } from '@vue/test-utils';
 import 'jest';
-import Vue from 'vue';
 import HelloComponent  from './HelloWorld.vue';
 
 describe("Hello", () => {
   let instance: any;
-
+  // @ts-ignore: Unreachable code error
   instance = shallowMount(HelloComponent, {
   });
   
