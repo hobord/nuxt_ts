@@ -22,7 +22,7 @@ test.before('Init Nuxt.js', async t => {
 test('Route / exits and render HTML', async t => {
   const { html } = await nuxt.renderRoute('/', {})
 
-  t.true(html.includes('Hello Hello'))
+  t.true(html.includes('Hello Hello2'))
 })
 
 // Close server and ask nuxt to stop listening to file changes

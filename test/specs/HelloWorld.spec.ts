@@ -10,6 +10,6 @@ describe("Hello", () => {
   });
   
   it("should return the current year", () => {
-      expect(instance.vm.msg).toBe("2017");
+      expect(instance.vm.msg).toBe("2018");
     });
 });
