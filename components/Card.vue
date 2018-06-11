@@ -1,7 +1,7 @@
 <template>
   <div class="card">
     <h2>{{ person.first_name + '_' + person.last_name }}</h2>
-    <!-- <img :src="'https://robohash.org/' + person.first_name + '_' + person.last_name" /> -->
+    <img :src="'https://robohash.org/' + person.first_name + '_' + person.last_name" />
   </div>
 </template>
 <script lang="ts">
