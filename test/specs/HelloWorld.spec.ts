@@ -3,7 +3,7 @@ import HelloComponent from '../../components/HelloWorld/HelloWorld.vue';
 
 describe("Hello", () => {
   let instance: any;
-
+  console.log("hello")
   instance = shallowMount(HelloComponent, {
   });
   
